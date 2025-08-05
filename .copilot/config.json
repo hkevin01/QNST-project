@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "framework": "QNST",
+  "languageSettings": {
+    "python": {
+      "suggestImports": true,
+      "suggestTestCases": true,
+      "enforceTypes": true,
+      "docstringFormat": "google"
+    },
+    "cpp": {
+      "suggestHeaders": true,
+      "suggestMemoryManagement": true,
+      "enforceConstCorrectness": true
+    },
+    "java": {
+      "suggestAccessModifiers": true,
+      "suggestExceptions": true,
+      "enforceNullSafety": true
+    }
+  },
+  "projectContext": {
+    "description": "Quantum Neural Substrate Transfer project for consciousness transfer and robotic embodiment",
+    "domains": [
+      "quantum-computing",
+      "neural-interfaces",
+      "robotics",
+      "consciousness-simulation"
+    ],
+    "keyComponents": [
+      "neural-mapping",
+      "quantum-substrate",
+      "robotics-interface",
+      "consciousness-transfer",
+      "safety-systems"
+    ]
+  },
+  "coding": {
+    "conventions": {
+      "naming": {
+        "classes": "PascalCase",
+        "functions": "snake_case",
+        "variables": "snake_case",
+        "constants": "SCREAMING_SNAKE_CASE"
+      },
+      "documentation": {
+        "requireFunctionDocs": true,
+        "requireClassDocs": true,
+        "requireModuleDocs": true
+      },
+      "testing": {
+        "requireUnitTests": true,
+        "requireIntegrationTests": true,
+        "coverageThreshold": 80
+      }
+    },
+    "patterns": {
+      "preferred": [
+        "dependency-injection",
+        "factory-pattern",
+        "observer-pattern",
+        "strategy-pattern"
+      ],
+      "discouraged": [
+        "global-state",
+        "singleton",
+        "goto-statements"
+      ]
+    }
+  },
+  "security": {
+    "enforceSecureCoding": true,
+    "requireInputValidation": true,
+    "requireErrorHandling": true,
+    "requireSafetyChecks": true
+  }
+}

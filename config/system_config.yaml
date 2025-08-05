@@ -1,0 +1,37 @@
+# System-wide configuration
+system:
+  name: "QNST"
+  version: "0.1.0"
+  log_level: "INFO"
+  enable_telemetry: True
+
+# Performance monitoring
+monitoring:
+  metrics_interval: 1.0  # seconds
+  health_check_interval: 5.0  # seconds
+  alert_threshold: 0.8  # % of capacity
+
+# Safety systems
+safety:
+  consciousness_validation:
+    check_interval: 0.1  # seconds
+    minimum_coherence: 0.9
+    alert_threshold: 0.7
+  
+  emergency:
+    backup_interval: 300  # seconds
+    timeout: 5.0  # seconds
+    max_retries: 3
+
+# Security
+security:
+  encryption: "AES-256"
+  authentication: "2FA"
+  session_timeout: 3600  # seconds
+
+# Resource limits
+resources:
+  max_memory: "256GB"
+  max_cpu_usage: 0.9  # % of total
+  max_gpu_usage: 0.95  # % of total
+  storage_limit: "10TB"

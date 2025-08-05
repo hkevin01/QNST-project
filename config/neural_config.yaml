@@ -1,0 +1,26 @@
+# Neural interface configuration
+neural:
+  electrode_count: 1000000
+  sampling_rate: 30000  # Hz
+  data_buffer_size: 1000000  # samples
+  electrode_specs:
+    diameter: 0.001  # mm
+    material: "platinum"
+    impedance: 1000  # ohms
+
+# Signal processing parameters
+signal_processing:
+  filters:
+    low_pass: 5000  # Hz
+    high_pass: 0.1  # Hz
+    notch: 60  # Hz
+  spike_detection:
+    threshold: 3.5  # std deviations
+    window_size: 2.0  # ms
+    refractory_period: 1.0  # ms
+
+# Data storage
+storage:
+  format: "hdf5"
+  compression: True
+  backup_interval: 300  # seconds

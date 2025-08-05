@@ -1,0 +1,38 @@
+# QNST Project Code Owners
+# Each line represents a rule for code ownership
+# The last matching pattern takes precedence
+
+# Default owners for everything in the repo
+* @QNST-admin
+
+# Neural mapping system
+/src/neural_mapping/ @neural-team-lead
+/tests/neural_mapping/ @neural-team-lead
+
+# Quantum substrate
+/src/quantum_substrate/ @quantum-team-lead
+/tests/quantum_substrate/ @quantum-team-lead
+
+# Robotics interface
+/src/robotics_interface/ @robotics-team-lead
+/tests/robotics_interface/ @robotics-team-lead
+
+# Consciousness transfer
+/src/consciousness_transfer/ @consciousness-team-lead
+/tests/consciousness_transfer/ @consciousness-team-lead
+
+# Safety systems
+/src/safety_systems/ @safety-team-lead
+/tests/safety_systems/ @safety-team-lead
+
+# Documentation
+/docs/ @docs-team
+*.md @docs-team
+
+# Build and deployment
+/.github/workflows/ @devops-team
+/scripts/ @devops-team
+
+# Core utilities
+/src/utils/ @core-team
+/tests/utils/ @core-team

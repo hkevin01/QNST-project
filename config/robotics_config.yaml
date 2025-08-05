@@ -1,0 +1,46 @@
+# Robotic body configuration
+body:
+  height: 180  # cm
+  weight: 80   # kg
+  degrees_of_freedom: 38
+  max_force: 1000  # N
+  max_speed: 2.0   # m/s
+
+# Sensory systems
+sensors:
+  visual:
+    cameras:
+      - type: "stereo"
+        resolution: [2560, 1440]
+        fps: 60
+        fov: 120  # degrees
+      - type: "peripheral"
+        resolution: [1920, 1080]
+        fps: 30
+        fov: 180  # degrees
+  
+  tactile:
+    pressure_sensors:
+      resolution: 0.01  # N/cm²
+      sampling_rate: 1000  # Hz
+      coverage_area: 2.0  # m²
+    
+  thermal:
+    temperature_range: [-40, 200]  # Celsius
+    resolution: 0.1  # Celsius
+    response_time: 0.01  # seconds
+    
+  chemical:
+    smell:
+      sensitivity: 1.0e-9  # mol/L
+      detectable_compounds: 1000
+    taste:
+      sensitivity: 1.0e-6  # mol/L
+      taste_categories: ["sweet", "sour", "bitter", "salty", "umami"]
+
+# Motor control
+motor_control:
+  control_frequency: 1000  # Hz
+  position_accuracy: 0.1  # mm
+  force_feedback: True
+  dynamic_balance: True
