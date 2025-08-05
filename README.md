@@ -125,5 +125,4 @@ MIT License (See LICENSE file for details)
 ## Contact
 
 Project Lead: Kevin H.  
-Email: [qnst@research.org](mailto:qnst@research.org)  
 GitHub: [hkevin01/qnst-project](https://github.com/hkevin01/qnst-project)
