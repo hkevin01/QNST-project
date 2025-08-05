@@ -1,0 +1,30 @@
+{
+  "name": "qnst-project",
+  "version": "0.1.0",
+  "description": "Quantum Neural Substrate Transfer Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "pytest",
+    "lint": "pylint src/",
+    "format": "black src/",
+    "type-check": "mypy src/",
+    "docs": "sphinx-build -b html docs/source docs/build"
+  },
+  "keywords": [
+    "quantum",
+    "neural",
+    "consciousness",
+    "transfer",
+    "brain-computer-interface"
+  ],
+  "author": "Kevin H",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkevin01/QNST-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hkevin01/QNST-project/issues"
+  },
+  "homepage": "https://github.com/hkevin01/QNST-project#readme"
+}

@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
     name="qnst",
@@ -14,7 +14,7 @@ setup(
         "numpy>=1.21.0",
         "qiskit>=0.33.0",
         "pennylane>=0.20.0",
-        "torch>=1.9.0",
+        "torch>=2.0.0",
         "tensorflow>=2.6.0",
         "scipy>=1.7.0",
         "pandas>=1.3.0",
@@ -26,6 +26,7 @@ setup(
         "tqdm>=4.62.0",
         "scikit-learn>=0.24.0",
         "pyserial>=3.5",
+        "mne>=1.4.0",
     ],
     extras_require={
         "dev": [
